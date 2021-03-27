@@ -9,7 +9,7 @@ const s = require('http').Server((req, res) => {
     let header = req.headers["x-test"];
 
     let result = new Object();
-    result.message = 'sorokina_irina';
+    result.message = 'egorchalapko';
     result["x-result"] = header;
     let body = "";
     
@@ -23,7 +23,7 @@ const s = require('http').Server((req, res) => {
   }
       
   else {
-    res.end('Oh no');
+    res.end('Nothing');
   }
 });
 s.listen(process.env.PORT);
